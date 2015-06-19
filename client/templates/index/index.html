@@ -1,0 +1,78 @@
+<template name="index">
+  {{#contentFor "headerTitle"}}
+  <h1 class="title">Meteor Ionic</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+  {{#ionContent}}
+  {{#ionList}}
+
+  <div class="list card">
+
+    <div class="item item-avatar">
+      <img src="http://ionicframework.com/img/docs/mcfly.jpg">
+      <h2>Marty McFly</h2>
+      <p>November 05, 1955</p>
+    </div>
+
+    <div class="item item-body">
+      <img src="http://materializecss.com/images/office.jpg">
+      <img src="http://materializecss.com/images/office.jpg">
+      <p>
+        This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+        the content is from a card-body consisting of an image and paragraph text. The footer
+        consists of tabs, icons aligned left, within the card-footer.
+      </p>
+      <p>
+        <a class="subdued">1 Like</a>
+        <a class="subdued">5 Comments</a>
+        <span class="activator"><i class="icon ion-more right"></i></span>
+      </p>
+      <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Comments<i class="icon ion-close-round right"></i></span>
+            <div class="item item-avatar">
+              <img src="http://ionicframework.com/img/docs/mcfly.jpg">
+              <h2>Ramesh</h2>
+              <p>Awesome Where you buy this?</p>
+            </div>
+            <div class="item item-avatar">
+              <img src="http://ionicframework.com/img/docs/mcfly.jpg">
+              <h2>Madhu</h2>
+              <p>Myntra</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="item tabs tabs-secondary tabs-icon-left">
+      <a class="tab-item" href="#">
+        <i class="icon ion-thumbsup"></i>
+        Like
+      </a>
+      <a class="tab-item" href="#">
+        <i class="icon ion-chatbox"></i>
+        Comment
+      </a>
+      <a class="tab-item" href="#">
+        <i class="icon ion-share"></i>
+        Share
+      </a>
+    </div>
+
+  </div>
+
+  <!-- <div class="item item-text-wrap">
+  <div class="card-image waves-effect waves-block waves-light">
+  <img class="activator" src="http://materializecss.com/images/office.jpg">
+</div>
+<div class="card-content">
+<span class="card-title activator grey-text text-darken-4">Card Title <i class="mdi-navigation-more-vert right"></i></span>
+<p><a href="#">This is a link</a></p>
+</div>
+<div class="card-reveal">
+<span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+<p>Here is some more information about this product that is only revealed once clicked on.</p>
+</div> -->
+{{/ionList}}
+{{/ionContent}}
+{{/ionView}}
+</template>
